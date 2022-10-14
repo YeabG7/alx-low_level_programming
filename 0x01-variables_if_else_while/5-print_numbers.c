@@ -2,8 +2,7 @@
 #include <unistd.h>
 /**
  * main -Entry point
- * Description: prints allsingle digit number of 
- * base 10 from 0
+ * Description: prints allsingle digit number of base 10 from 0
  * Return: Always 0 (success)
  */
 int main(void)
