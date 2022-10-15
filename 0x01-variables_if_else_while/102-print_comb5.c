@@ -13,26 +13,28 @@ int main(void)
 	{
 		for (i = 48; i <= 57; i++)
 		{
-			for (j = 48; j <= 57; k++)
+			for (k = 48; k <= 57; k++)
 			{
-	                if (((k + j) > (c + i) && k >= c) || c < k)
-			{
-				putchar(c);
-				putchar(i);
-				putchar(' ');
-				putchar(k);
-				putchar(j);
+				for (j = 48; j <= 57; k++)
+			        {
+			        if (((k + j) > (c + i) && k >= c) || c < k)
+	   		        {
+			        	putchar(c);
+				        putchar(i);
+			 	        putchar(' ');
+				        putchar(k);
+				        putchar(j);
 
-				if (c + i + k + j == 227 && c ==57)
-				{
-				break;
-				}
-				else
-				{
-				putchar(',');
-				putchar(' ');
-				}
-			}
+				        if (c + i + k + j == 227 && c ==57)
+			         	{
+				        break;
+				        }
+				        else
+				        {
+				        putchar(',');
+				        putchar(' ');
+			          	}
+			        }
 			}
 		}
 	}		
